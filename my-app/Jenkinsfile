@@ -19,11 +19,11 @@ pipeline {
 		stage('Maven clean, compile') 
 		{steps 
 		{bat 'mvn -version'
-		 bat 'mvn -f my-app\pom.xml clean compile '}
+		 bat 'mvn -f my-app/pom.xml clean compile '}
 		}
 						
 		stage('Maven install, deploy') 
-		{steps {bat 'mvn -f  my-app\pom.xm install deploy'}}
+		{steps {bat 'mvn -f  my-app/pom.xml install deploy'}}
             }
 	//end of the sequential stages
 
