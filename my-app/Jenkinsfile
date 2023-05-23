@@ -23,7 +23,7 @@ pipeline {
 		}
 						
 		stage('Maven install, deploy') 
-		{steps {bat 'mvn install deploy'}}
+		{steps {bat 'mvn -f  my-app\pom.xm install deploy'}}
             }
 	//end of the sequential stages
 
